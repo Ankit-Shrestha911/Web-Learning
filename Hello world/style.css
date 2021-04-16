@@ -1,0 +1,42 @@
+body{
+    position: relative;
+background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+
+    height: 100vh;
+}
+#linear{
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    border: 1px solid lightgreen;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    box-shadow: 14px 20px 40px black ;
+    left: 30%;
+    top: 20%;
+    
+    
+   
+}
+p{
+    /* position: absolute; */
+   text-align: center;
+   font-weight: bolder;
+   font-size: 45px;
+   opacity: 0.6;
+   color: black;
+   padding-top: 21%;
+   text-shadow: 20px 12px 4px grey;
+   
+
+   
+}
+span{
+    text-align: center;
+   font-weight: bolder;
+   font-size: 45px;
+   color: red;
+   opacity: 0.9;
+
+
+ 
+}
