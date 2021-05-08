@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    position: relative;
+    display: flex;
+    background: #140F0F;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    position: relative;
+    /* display: flex; */
+  width: 500px;
+    height: 50px;
+    background: #201212;
+    border-radius: 7px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+nav a{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: wheat;
+    line-height: 50px;
+    z-index: 1;
+    display: inline-block;
+    font-weight: bold;
+    transition: all .5s ease .0s;
+
+
+}
+
+
+
+nav .animation
+{
+    position: absolute;
+    height: 5px;
+    /* height: 100%;  if we want full over the content */ 
+
+    bottom: 0;
+    
+    z-index: 0;
+    background: #1abc9c;
+    /* opacity: 0.4; */
+    border-radius: 7px;
+    transition: all .5s ease .1s;
+
+
+}
+
+
+
+a:active{
+    /* background-color: rgba(26, 14, 14, 0.5); */
+    box-shadow: inset 1px 1px 2px black, inset -1px -1px 2px #ffffff;
+    opacity: 0.5;
+}
+
+a:nth-child(1){
+    width: 120px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation
+{
+    width: 120px;
+    left: 0;
+}
+
+
+a:nth-child(2){
+    width: 110px;
+}
+
+nav .start-service, a:nth-child(2):hover~.animation
+{
+    width: 110px;
+    left: 122px;
+}
+
+
+
+
+a:nth-child(3){
+    width: 120px;
+}
+
+nav .start-about, a:nth-child(3):hover~.animation
+{
+    width: 120px;
+    left: 235px;
+}
+
+
+a:nth-child(4){
+    width: 130px;
+}
+
+nav .start-contact, a:nth-child(4):hover~.animation
+{
+    width: 150px;
+    left: 350px;
+}
+
+
+
+
+
+
+
+
+
