@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <button class="btn-back" id="stop"> Stop </button><br>
+
+        <p id="demo"></p><br>
+
+    </div>
+    <br>
+    <div class="bott">
+        <button class="btn" id="reset" onclick="reset()"> Reset </button>
+    </div>
+
+    <!-- <script src="javaScript.js"></script> -->
+    <script>
+        let time;
+        let stop = document.getElementById('stop');
+        let rest = document.getElementById('reset');
+        let timer = 1;
+
+        // This function stop the timer //
+        const pause = () => {
+            clearInterval(time);
+        }
+
+        stop.addEventListener('click', pause);
+
+        /* This function play the timer infinte times*/
+        const play = () => {
+            time = setInterval(() => {
+                if (timer <= 200) {
+
+                    document.getElementById('demo').innerHTML = timer;
+                    timer++;
+                }
+                else {
+                    timer = 1;
+                }
+            }, 0);
+        }
+        // calling the function
+        play();
+
+        // This function reload the window or web page //
+        const reset = () => {
+            window.location.reload();
+        }
+
+    </script>
+
+</body>
+
+</html>

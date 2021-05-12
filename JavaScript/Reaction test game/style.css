@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    flex-direction: column;
+}
+
+.container{
+    /* border: 1px solid red; */
+    position: relative;
+    height: 100px;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+.container .btn-back, .bott .btn{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    outline: none;
+    padding: 15px 20px;
+    background-color: yellow;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: .9rem;
+    border: none;
+}
+
+
+
+.container p{
+    /* border: 1px solid red; */
+    color: white;
+    margin-top: 80px;
+    font-size: 30px;
+    height: 30px;
+    text-align: center;
+    width: 40px;
+    /* margin-left: 70px; */
+}
+
+.container .btn-back:active{
+    box-shadow: inset 1px 1px 2px black, inset -1px -1px 2px black;
+}
+
+.bott{
+    display: flex;
+    justify-content: center;
+}
+.bott .btn{
+   
+    margin-top: 20px;
+}
+
+.bott .btn:active{
+    transition: all 0.1s ease-in;
+    
+box-shadow: inset -2px -2px 2px black, inset 2px 2px 2px black;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
